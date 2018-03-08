@@ -59,7 +59,8 @@
 \newcommand{\valo}{[a,b]}
 \newcommand{\reg}{{\cal R}\left( f,[a,b] \right)}
 \newcommand{\chiri}{$\spadesuit$}
-
+                             
+\renewcommand{\setminus}{-}
 
 \newcommand{\tend}[1]{\mathop{\longrightarrow} \limits_{#1}}
 \newcommand{\tends}[2]{\mathop{\longrightarrow} \limits_{#1 \to #2}}
@@ -136,9 +137,9 @@ $$ \proba{ A \cup (B \cap C) = (A \cup B) \cap (A \cup C)}  \proba{ A \cap (B \c
 
 
 \item Determinar cuáles de las siguientes igualdades e inclusiones son verdaderas o falsas. En caso de que una igualdad sea falsa determinar si se da alguna de las inclusiones.
-$$ \proba{ A \setminus ( B \setminus A) = \emptyset } \proba{ (A \setminus  B)  \setminus A = \emptyset }  \proba{[A \setminus B] = [A \setminus (A \cap B) ]}  $$
-$$\proba{ A \setminus (A \setminus B) = B } \proba{ [A \cap (B \setminus C)] = [(A \cap B ) \setminus (A \cap C)] }  \proba{[A \cap (B \setminus C)] = [(A \cap B) \setminus C ] } $$
-$$\proba{ A \setminus (B \cup C) = [(A \setminus B) \cup (A \setminus C)] } \proba{ A \setminus (B \cup C) = [(A \setminus B) \cap (A \setminus C)] }  $$
+$$ \proba{ A \setminus ( B \setminus A) = \emptyset } \proba{ (A \setminus  B)  \setminus A = \emptyset }  \proba{A \setminus B = A \setminus (A \cap B) }  $$
+$$\proba{ A \setminus (A \setminus B) = B } \proba{ A \cap (B \setminus C) = (A \cap B ) \setminus (A \cap C) }  \proba{A \cap (B \setminus C) = (A \cap B) \setminus C  } $$
+$$\proba{ A \setminus (B \cup C) = (A \setminus B) \cup (A \setminus C) } \proba{ A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C) }  $$
 \cuento
 
 \item { \bf Producto cartesiano }
@@ -147,7 +148,7 @@ En este ejercicio todos los conjuntos considerados son no vac\'ios.
 \begin{enumerate}
 \item Sean $A = \{1,2,3\}$ y $B=\{a,b,c\}$. Listar todos los elementos de $A \times B$ y de $B \times A$.
 
-\item Sean $A$ y $B$ dos conjuntos cualesquiera. Probar que si $(x,y) \in A \times B$ y adem\'as $(x,y) \in B \times A$ entonces $\{x,y\} \subset A \cap B$.
+\item Sean $A$ y $B$ dos conjuntos cualesquiera. Probar que si $(x,y) \in A \times B$ y adem\'as $(x,y) \in B \times A$ entonces $\{x,y\} \subseteq A \cap B$.
 
 \item Probar que si $A \times B = B \times A$ entonces $A = B$.
 \end{enumerate}
