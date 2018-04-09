@@ -1,0 +1,126 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[spanish]{babel}
+
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+
+
+\hoffset = -.5in
+
+\marginparwidth = 0cm
+
+\evensidemargin = 0cm
+
+\marginparpush = 0cm
+
+
+
+\voffset = -1in
+
+
+
+\textwidth 17cm \textheight 25cm
+
+
+
+
+
+%\usepackage{amssymb}
+
+\usepackage{amsmath}
+
+\usepackage{amsfonts}
+
+
+
+
+
+
+
+
+
+\renewcommand{\theenumi}{\Alph{enumi}}
+
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+
+
+
+
+\newtheorem {Ejercicio}{Ejercicio}
+\newenvironment{ejercicio}{\begin{Ejercicio} \rm}{\rm\end{Ejercicio}}
+
+
+
+\hrule
+\bigskip
+\noindent Matemática Discreta y Lógica 1\\
+\noindent Sede San José
+
+\smallskip
+
+
+\begin{center}
+{\large\sc  Práctico 2: Funciones}
+\end{center}
+\medskip
+\hrule
+
+\bigskip
+
+\begin{ejercicio}
+Determinar cuales de las relaciones definidas en el primer ejercicio del práctico anterior son funciones.
+\end{ejercicio}
+
+\begin{ejercicio}
+Determinar cuál(es) de las siguientes propiedades verifican las funciones que se definen abajo
+\begin{itemize}
+\item
+inyectiva,
+\item
+sobreyectiva,
+\item
+biyectiva.
+\end{itemize}
+
+\begin{enumerate}
+\item
+$f: \mathbb{Z} \to \mathbb{Z}$ definida como $f(z)=z-1$.
+\item
+$f: \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ definida como $f(x,y)=x$.
+\item
+$f: \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ definida como $f(x,y)=x+y$.
+\item
+$f: \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ definida como $f(x,y)=xy$.
+
+
+\end{enumerate}
+
+\end{ejercicio}
+
+
+\begin{ejercicio}
+Se consideran conjuntos $A$ y $B$ con $n$ y $m$ elementos respectivamente.
+\begin{enumerate}
+\item
+¿Cuántas funciones de $A$ en $B$ se pueden definir?
+\item
+¿Qué relación deben cumplir $m$ y $n$ para poder definir una función inyectiva de $A$ en $B$?\\
+¿Cuántas funciones inyectivas de $A$ en $B$ se pueden definir?
+\item
+¿Qué relación deben cumplir $m$ y $n$ para poder definir una función sobreyectiva de $A$ en $B$? ¿Qué relación deben cumplir $m$ y $n$ para poder definir una función biyectiva de $A$ en $B$?\\
+¿Cuántas funciones biyectivas de $A$ en $B$ se pueden definir?
+\end{enumerate}
+\end{ejercicio}
+
+\begin{ejercicio}
+Probar que la función de $f:\mathbb{N}\to P$, donde $P$ es el conjunto de los números pares (es decir, $\{2n: n \in \mathbb{N}\}$) definida como $f(n)=2n$ es biyectiva. ¿Qué podría decirse de la cantidad de elementos de estos conjuntos?
+\end{ejercicio}
+
+
+\end{document}
