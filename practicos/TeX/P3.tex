@@ -1,61 +1,29 @@
 \documentclass[12pt,a4paper]{article}
 
 \usepackage[spanish]{babel}
-
 \usepackage[latin1]{inputenc}
 \usepackage{graphicx}
 
-
 \hoffset = -.5in
-
 \marginparwidth = 0cm
-
 \evensidemargin = 0cm
-
 \marginparpush = 0cm
-
-
-
 \voffset = -1in
 
 
 
 \textwidth 17cm \textheight 25cm
 
-
-
-
-
-%\usepackage{amssymb}
-
 \usepackage{amsmath}
-
 \usepackage{amsfonts}
-
-
-
-
-
-
-
-
 
 \renewcommand{\theenumi}{\Alph{enumi}}
 
-
-
 \begin{document}
-
 \pagestyle{empty}
-
-
-
-
 
 \newtheorem {Ejercicio}{Ejercicio}
 \newenvironment{ejercicio}{\begin{Ejercicio} \rm}{\rm\end{Ejercicio}}
-
-
 
 \hrule
 \bigskip
@@ -66,7 +34,7 @@
 
 
 \begin{center}
-{\large\sc  Práctico 2: Funciones}
+{\large\sc  Práctico 3: Funciones}
 \end{center}
 \medskip
 \hrule
@@ -110,17 +78,48 @@ Se consideran conjuntos $A$ y $B$ con $n$ y $m$ elementos respectivamente.
 \item
 ¿Cuántas funciones de $A$ en $B$ se pueden definir?
 \item
-¿Qué relación deben cumplir $m$ y $n$ para poder definir una función inyectiva de $A$ en $B$?\\
+  ¿Qué relación deben cumplir $m$ y $n$ para poder definir una función inyectiva
+  de $A$ en $B$?\\
 ¿Cuántas funciones inyectivas de $A$ en $B$ se pueden definir?
 \item
-¿Qué relación deben cumplir $m$ y $n$ para poder definir una función sobreyectiva de $A$ en $B$? ¿Qué relación deben cumplir $m$ y $n$ para poder definir una función biyectiva de $A$ en $B$?\\
+  ¿Qué relación deben cumplir $m$ y $n$ para poder definir una función
+  sobreyectiva de $A$ en $B$? ¿Qué relación deben cumplir $m$ y $n$ para
+  poder definir una función biyectiva de $A$ en $B$?\\
 ¿Cuántas funciones biyectivas de $A$ en $B$ se pueden definir?
 \end{enumerate}
 \end{ejercicio}
 
 \begin{ejercicio}
-Probar que la función de $f:\mathbb{N}\to P$, donde $P$ es el conjunto de los números pares (es decir, $\{2n: n \in \mathbb{N}\}$) definida como $f(n)=2n$ es biyectiva. ¿Qué podría decirse de la cantidad de elementos de estos conjuntos?
+  Probar que la función de $f:\mathbb{N}\to P$,
+  donde $P$ es el conjunto de los números pares
+  (es decir, $\{2n: n \in \mathbb{N}\}$) definida como $f(n)=2n$ es biyectiva.
+  ¿Qué podría decirse de la cantidad de elementos de estos conjuntos?
 \end{ejercicio}
+
+\begin{ejercicio}
+  Para los siguientes pares de funciones $f:\mathbb{Z} \rightarrow \mathbb{Z}$
+  calcular $f \circ g$ y $g \circ f$. 
+  \begin{enumerate}
+  \item $f(x) = x$, $g(x) = x$
+  \item $f(x) = x^2$, $g(x) = 4x$
+  \item $f(x) = 2x + 5$, $g(x) = 3x - 1$
+  \item $f(x) = 2x - 1$, $g(x) = x^{3} - x^{2} - 4$
+  \end{enumerate}
+\end{ejercicio}
+
+
+\begin{ejercicio}
+  Consideramos las operaciones $\oplus$ y $\otimes$ en $ \{ 0,1\}$, definidas como:
+
+  $$a \oplus b = \left \{ \begin{matrix} 0 & \mbox{si } a = b = 0
+    \\ 1 & \mbox{en otro caso} \end{matrix}\right. , \hspace{1cm}
+  a \otimes b = \left \{ \begin{matrix} 1 & \mbox{si } a = b = 1
+    \\  0 & \mbox{en otro caso} \end{matrix}\right.$$
+
+  Determinar si tienen neutro y encontrarlo.
+\end{ejercicio}
+
+
 
 
 \end{document}
