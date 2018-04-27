@@ -1,0 +1,134 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\hoffset = -.5in
+\marginparwidth = 0cm
+\evensidemargin = 0cm
+\marginparpush = 0cm
+\voffset = -1in
+
+
+
+\textwidth 17cm \textheight 25cm
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\N}{\mathbb{N}}
+
+\begin{document}
+\pagestyle{empty}
+
+\newtheorem {Ejercicio}{Ejercicio}
+\newenvironment{ejercicio}{\begin{Ejercicio} \rm}{\rm\end{Ejercicio}}
+
+\hrule
+\bigskip
+\noindent Matemática Discreta y Lógica I\\
+\noindent Sede San José
+
+\smallskip
+
+
+\begin{center}
+{\large\sc  Práctico 4: Inducción}
+\end{center}
+\medskip
+\hrule
+
+\bigskip
+
+\begin{ejercicio}
+
+  \noindent
+  Se consideran los siguientes teoremas sobre los naturales:
+\begin{enumerate}[label= \alph*)]
+\item
+  $\forall n \in \N, n^3 - n = \dot{3}$
+\item
+  $\forall n \in \N, \sum_{i=0}^{n}{i} = \frac{n(n+1)}{2}$
+\item
+  $\forall n \in \N, \sum_{i=0}^{n}{i^2} = \frac{n(n+1)(2n+1)}{6}$
+\item
+  $\forall n \in \N, \sum_{i=0}^{n}{i^3} = \frac{1}{4} n^2 (n+1)^2$
+\item
+  $\forall n \geq 2, f_n^2 = f_{n-1} f_{n+1} + (-1)^{n}$
+  En donde $(f_i)_{i \in \N}$ es la sucesi\'on de Fibonacci.
+\item
+  $\forall n \geq 4, n!>2^n$
+\item
+  $\forall n \geq 10, n^3<2^n$
+\end{enumerate}
+
+Se pide:
+\begin{enumerate}[label= \alph*)]
+\item Plantear en cada caso el esquema de la prueba por inducción, es decir:
+  el paso base, el paso inductivo,
+  y dentro de éste último la hipótesis y tesis, como se vió en clase.
+\item
+  Realizar la prueba por inducción (es decir,
+  chequear que el paso base se satisface
+  y demostrar la tesis inductiva a partir de la hipótesis)
+\end{enumerate}
+
+\end{ejercicio}
+
+\begin{ejercicio}
+  Calcular los primeros 5 términos de las siguientes funciones de tipo
+  $\N \rightarrow \N$ definidas por recursión:
+  
+  \begin{enumerate}
+    \item
+      \[ f(n) =
+      \begin{cases} 
+        1        & \mbox{si } n = 0 \\
+        2 f(n-1) & \mbox{si } n \geq 1 
+      \end{cases}
+      \]
+
+    \item
+      \[ g(n) =
+      \begin{cases} 
+        2        & \mbox{si } n = 0 \\
+        4        & \mbox{si } n = 1 \\
+        2 f(n-1) + f(n-2) & \mbox{si } n \geq 2 
+      \end{cases}
+      \]
+
+    \item
+      \[ h(n) =
+      \begin{cases} 
+        1        & \mbox{si } n = 0 \\
+        -1       & \mbox{si } n = 1 \\
+        -2 f(n-1) + f(n-2) & \mbox{si } n > 1 
+      \end{cases}
+      \]
+  \end{enumerate}
+\end{ejercicio}
+
+\begin{ejercicio}
+  Demostrar por inducción que para todo natural $n$, $g(n)$ es par
+  (siendo $g(n)$ la función definida en el ejercicio anterior).
+\end{ejercicio}
+
+\newpage 
+\begin{ejercicio}
+  Definir por recursión las siguientes funciones:
+  \begin{enumerate}[label= \alph*)]
+  \item $f(n) = 2n$
+  \item La función $fib(n)$ que retorna el enésimo número de fibonacci.
+    \footnote{\href{https://en.wikipedia.org/wiki/Fibonacci\_number}
+      {https://en.wikipedia.org/wiki/Fibonacci\_number}}
+  \item
+    $n!$
+  \item
+    $f(n)=2^n$
+  \end{enumerate}
+\end{ejercicio}
+
+\end{document}

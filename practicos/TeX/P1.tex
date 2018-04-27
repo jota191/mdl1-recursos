@@ -1,0 +1,166 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[spanish]{babel}
+
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\hoffset = -.5in
+
+\marginparwidth = 0cm
+
+\evensidemargin = 0cm
+
+\marginparpush = 0cm
+
+
+
+\voffset = -1in
+
+
+
+\textwidth 17cm \textheight 25cm
+
+
+
+
+
+%\usepackage{amssymb}
+
+\usepackage{amsmath}
+
+\usepackage{amsfonts}
+
+
+
+
+
+
+
+
+
+\renewcommand{\theenumi}{\Alph{enumi}}
+
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+
+
+
+
+\newtheorem {Ejercicio}{Ejercicio}
+\newenvironment{ejercicio}{\begin{Ejercicio} \rm}{\rm\end{Ejercicio}}
+
+
+
+\hrule
+\bigskip
+\noindent Matemática Discreta y Lógica 1\\
+\noindent Sede Buceo
+
+\smallskip
+
+
+\begin{center}
+{\large\sc  Práctico 1: Conjuntos}
+\end{center}
+\medskip
+\hrule
+
+\begin{enumerate}
+\item[1.]
+Realizar un dibujo que ilustre las operaciones: unión, intersección, complemento y diferencia.
+
+\item[2.]
+Describir por extensión (si es posible) los siguientes conjuntos:
+
+\setlength{\columnsep} {-2.5cm}
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+\item $D= A \cup B $,
+\item $E= A \cap C $,
+\item $D \setminus C$,
+\item $ B^c$ en el universo $\mathbb{N}$,
+\item $A \times C$,
+\item $C \times A$,
+\item $\{n \in \mathbb{N}: n<0\}$.
+
+
+\end{enumerate}
+\end{multicols}
+
+siendo
+\[
+A= \{2,4,6,8,10\}, \qquad B = \{1,3,5,7,9\}, \qquad C= \{3, 6, 9\}.
+\]
+
+\item[3.]
+Describir por comprensión los siguientes conjuntos:
+
+\setlength{\columnsep} {-2.5cm}
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+\item $A= \{2,4,6,8,10\} $,
+\item$ B = \{1,3,5,7,9\}$,
+\item $C= \{3, 6, 9\}$,
+\item $D= A \cup B $,
+\item $E= A \cap C $,
+\item $D \setminus C$,
+\item $ B^c$ en el universo $\mathbb{N}$.
+\end{enumerate}
+\end{multicols}
+
+\item[4.]
+Sean $\mathcal{U} = \{n \in \mathbb{N}\colon n \leq 10\}, A = \{1,3,5,7,9\}, B = \{4,5,6\} $ y $ C= \{2, 4, 6, 8\}$.\\
+Describir por extensión y por comprensión los siguientes conjuntos:
+\setlength{\columnsep} {-2.5cm}
+\begin{multicols}{3}
+
+\begin{enumerate}
+\item $A \cup \emptyset$,
+\item $A \cap \emptyset $,
+\item $A \cap (B \cup C)$,
+\item $B^c \cap (C \setminus A)$,
+\item $(A \cup B)^c \cup C$,
+\item $(A \cup B)\setminus (C \setminus B)$.
+\end{enumerate}
+\end{multicols}
+\item[5.]
+Establecer si existe relación de 
+\begin{itemize}
+\item (no) pertenencia,
+\item (no) inclusión,
+\item igualdad,
+\end{itemize}
+entre los siguientes pares de objetos:
+
+\setlength{\columnsep} {-4.5cm}
+\begin{multicols}{2}
+
+\begin{enumerate}
+\item $\{1,2,3,0\}$ y $0$, 
+\item $\{1,2,3,0\}$ y $\emptyset$,
+\item $\{1,2,3,0\}$ y $5$,
+\item $\{1,2,3,0\}$ y $\{5\}$,
+\item $\{1,2,3,0\}$ y $\{5,0\}$,
+\item $\{(1,1), (2,3), (1,5), (0,0), (5,0)\}$ y $(5,0)$,
+\item $\{(1,1), (2,3), (1,5), (0,0), (5,0)\}$ y $\{(5,0)\}$,
+\item $\{0\}$ y $\emptyset$,
+\item $\{(1,1), (2,3)\}$ y $\{(1,1), (3,2)\}$.
+
+
+\end{enumerate}
+\end{multicols}
+\end{enumerate}
+
+
+
+\end{document}

@@ -1,0 +1,111 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\hoffset = -.5in
+\marginparwidth = 0cm
+\evensidemargin = 0cm
+\marginparpush = 0cm
+\voffset = -1in
+
+
+
+\textwidth 17cm \textheight 25cm
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\N}{\mathbb{N}}
+
+\newcounter{cuent}
+\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\quad}
+\displaystyle#1\qquad}
+\newcommand{\cuento}{\setcounter{cuent}{0}}
+
+
+\begin{document}
+\pagestyle{empty}
+
+\newtheorem {Ejercicio}{Ejercicio}
+\newenvironment{ejercicio}{\begin{Ejercicio} \rm}{\rm\end{Ejercicio}}
+
+\hrule
+\bigskip
+\noindent Matemática Discreta y Lógica I\\
+\noindent Sede San José
+
+\smallskip
+\begin{center}
+{\large\sc  Práctico 5: Sucesiones definidas por Recurrencia}
+\end{center}
+\medskip
+\hrule
+
+\bigskip
+
+
+\begin{ejercicio}
+  Consideramos las siguientes sucesiones definidas por recurrencia:
+  
+  $$\proba{\left\{\begin{matrix} a_0 =& 6 &\\
+    a_n =& 4 a_{n-1} &(n\geq 1)\end{matrix}
+    \right.  }
+  \proba{\left\{\begin{matrix} b_0 =& 1 &\\
+    b_{n+1} =& 2 b_n &(n \geq 0)\end{matrix}
+    \right. }
+  \proba{ \left\{\begin{matrix} c_0 =& 2 &\\
+    c_n =& (-3) c_{n-1} &(n> 0)\end{matrix}
+    \right. }  $$
+  Hallar una expresi\'on expl\'icita en cada caso,
+  demostrar que es correcta por inducci\'on.
+\end{ejercicio}
+
+
+
+\begin{ejercicio}
+  Encuentre la soluci\'on general de las siguientes relaciones de recurrencia,
+  y las soluciones particulares sabiendo que $a_0=1$ :
+  \begin{enumerate}[label=\alph* )]
+  \item
+    $3 a_{n+1} - 4 a_n = 0 (n \geq 0)$
+  \item
+    $2 a_{n+1} - 3 a_n = 0 (n \geq 0)$
+  \item
+    $2 a_{n+1} -  \frac{3 a_n}{2} = 0 (n \geq 0)$
+  \end{enumerate}
+\end{ejercicio}
+
+
+\begin{ejercicio}
+  Consideramos las siguientes sucesiones definidas por recurrencia:
+  \cuento
+  $$
+  \proba{\left\{\begin{matrix} a_0 =& 2 &\\
+    a_n =& 3 + a_{n-1} &(n\geq 1)\end{matrix}
+    \right.  }
+  \proba{\left\{\begin{matrix} b_0 =& 3 &\\
+    b_{n+1} =& b_n -2 &(n \geq 0 )\end{matrix}
+    \right. } $$
+
+  Hallar una expresi\'on expl\'icita en cada caso,
+  demostrar que es correcta por inducci\'on.
+\end{ejercicio}
+
+
+\begin{ejercicio}
+  Generalizar el ejercicio anterior, dada:
+  $$
+  \left\{\begin{matrix} a_0 =& C &\\
+    a_n =& a_{n-1} + K &(n\geq 1)\end{matrix}
+    \right. $$
+
+    Hallar una expresi\'on expl\'icita para $a_n$. Demostrar por inducci\'on
+    que es correcta.
+\end{ejercicio}
+
+
+\end{document}
