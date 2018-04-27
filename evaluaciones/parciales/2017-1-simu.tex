@@ -1,0 +1,109 @@
+% Author : Juan Garc\'ia Garland
+% License: GPLv3
+
+% This is a plain TeX file. Use the tex system to compile it.
+
+\nopagenumbers
+\parindent=0in
+
+\font \sectionsize = cmr10 scaled \magstep 5
+\font \titlesize = cmr10 scaled \magstep 2
+
+\def\center#1{
+\par
+\begingroup
+\leftskip=0pt plus 1fil
+\rightskip=\leftskip
+\parindent=0pt
+\parfillskip=0pt
+#1
+\par
+\endgroup
+}
+
+\def\title#1{{\vskip 10pt \titlesize \bf \center{#1}}}
+
+\def\ej#1{ {\vskip 30pt \sectionsize \bf #1} }
+
+\def\part#1{{\parindent=10pt \sectionsize \bf  \itemitem{#1)}}}
+
+\def\ejsec#1#2{{\parindent=10pt \sectionsize \bf  \itemitem{#1)}}
+               { #2}}
+
+\def\mathbb#1{{\rm I\!#1}}
+
+
+%Document begins
+\title{Matem\'atica discreta y L\'ogica I - Ejemplo de parcial}
+
+\center{San Jos\'e -- Abril de 2017}
+
+No se permite consultar material.
+
+No se permite utilizar calculadora.
+
+Se disponen de 3 horas.
+
+Justifique todas sus respuestas.
+
+\ej{Ejercicio 1.}
+
+Sea $A = \{a,b,c,d\}$ un conjunto y $R \in A \times A$ una la relaci\'on
+sobre $A$, tal que:
+$$R = \{(a,a),(a,b),(a,d),(b,a),(b,b),(b,c),(b,d)
+,(c,b),(c,c),(d,a),(d,b),(d,d)\}.$$
+
+\part{a}
+Determinar una matriz de adyacencia para esta relaci\'on.
+\part{b}
+Determinar si la relaci\'on es reflexiva, sim\'etrica, y/o transitiva,
+justificando seg\'un los criterios {\bf sobre la matriz}
+vistos en el curso.
+
+
+
+\ej{Ejercicio 2.}
+
+Sea $(a_n)_{n \in \mathbb{N}}$.
+Consideramos la ecuaci\'on:
+
+$$a_n - 5a_{n-1} = -6a_{n-2} \hbox{ ~~ } (n \geq 2)$$
+
+\part{a}
+Hallar la soluci\'on general.
+
+\part{b}
+Hallar una soluci\'on particular sabiendo que $a_0 = 1$, y $ a_1 = 4$
+
+
+\ej{Ejercicio 3.}
+
+\part{a}
+Escribir (en binario) la suma $10010_2 + 1011010_2$
+
+\part{b}
+Representar $584_{10}$ en base $2$.
+
+\part{c}
+Representar {\tt 0xCAFE} en base $2$.
+
+\ej{Ejercicio 4.}
+
+Sea $A$ un conjunto. Consideramos una operaci\'on cerrada en $A$.
+$f : A \times A \rightarrow A$.
+Decimos que $e \in A$ es el {\it elemento neutro} de la operaci\'on $f$ si
+$\forall a \in A, f(a,e) = f(e,a) = a$.
+
+\part{a}
+Demostrar que si existe un neutro, este tiene que ser \'unico.
+
+\part{b}
+Supongamos que $A = \mathbb{N}$, y $f(m,n) = m+n-2$.
+Hallar (si existe) el neutro para esta operaci\'on. En caso de que no exista,
+justificar por qu\'e.
+
+\eject
+
+\bye
+
+

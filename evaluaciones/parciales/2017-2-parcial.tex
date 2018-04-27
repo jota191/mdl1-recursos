@@ -1,0 +1,121 @@
+% Author : Juan Garc\'ia Garland
+% License: GPLv3
+
+% This is a plain TeX file. Use the tex system to compile it.
+
+\nopagenumbers
+\parindent=0in
+
+\font \sectionsize = cmr12 scaled \magstep 5
+\font \titlesize = cmr12 scaled \magstep 2
+
+\font\big=cmr10 at 11pt
+
+\def\center#1{
+\par
+\begingroup
+\leftskip=0pt plus 1fil
+\rightskip=\leftskip
+\parindent=0pt
+\parfillskip=0pt
+#1
+\par
+\endgroup
+}
+
+\def\title#1{{\vskip 10pt \titlesize \bf \center{#1}}}
+
+\def\ej#1{ {\vskip 30pt \sectionsize \bf #1} }
+
+\def\part#1{{\parindent=10pt \sectionsize \bf  \itemitem{#1)}}}
+
+\def\ejsec#1#2{{\parindent=10pt \sectionsize \bf  \itemitem{#1)}}
+               { #2}}
+
+\def\mathbb#1{{\rm I\!#1}}
+
+
+%Document begins
+\title{Matem\'atica Discreta y L\'ogica I - Segundo Parcial}
+
+\center{San Jos\'e -- Lunes 26 de junio de 2017}
+
+\big
+
+\vfill
+
+No se permite consultar material.
+
+Se disponen de 3 horas.
+
+Justifique todas sus respuestas.
+
+\ej{Ejercicio 1.}
+
+Considere el alfabeto $ \Sigma = \{ {\tt a,b,c }\}$.
+
+\par{a) Defina inductivamente el lenguaje $L  \subset \Sigma^*$ tal que
+$L = \{ {\tt \epsilon, ac, baca, bbacaa, bbbacaaa, bbbbacaaaa, ... } \}$.
+
+\par{b)} Enuncie el principio de inducci\'on primitiva (PIP) para $L$.
+
+\par{c)} Defina siguiendo el esquema de recursi\'on primitiva (ERP),
+las funciones $cant_a, cant_b : L \rightarrow \mathbb{N}$
+que cuentan la cantidad de ocurrencias de los s\'\i mbolos {\tt a} y {\tt b}
+respectivamente, por ejemplo tenemos que $cant_a ({\tt baca}) = 2$,
+$cant_b ({\tt bbbacaaa}) = 3$.
+
+\par{d)} Demuestre, utilizando el PIP para $L$, que para toda palabra
+$w \in L$, se cumple que $cant_a(w) = cant_b(w) + 1$.
+
+\par{e)} Demuestre que ${\tt bbacaa} \in L$.
+Justifique (de manera informal) que ${\tt bbaacaa} \notin L$.
+
+
+
+
+\ej{Ejercicio 2.}
+
+Demostrar o refutar, utilizando tablas de verdad las siguientes afirmaciones:
+
+\par{a)} $
+          \models (p_0 \rightarrow p_1) \leftrightarrow (\neg p_1 \rightarrow
+          \neg p_0)
+         $
+
+\par{b)} $\models (p_0 \vee p_1 \vee \neg p_2) \rightarrow
+          \neg (\neg p_0 \wedge \neg p_1 \wedge p_2)$
+
+
+\ej{Ejercicio 3.}
+
+Demostrar:
+
+\par{a)} $\alpha \leftrightarrow \beta, \alpha \models \beta$
+
+\par{b)} $\models (\alpha \leftrightarrow \beta)
+          \leftrightarrow (\neg \beta \leftrightarrow \neg \alpha)$
+
+
+\ej{Ejercicio 4.}
+
+Seleccione 3 de los siguientes teoremas, y construya
+derivaciones que los demuestren.
+No se admiten en ning\'un caso justificaciones sem\'anticas.
+
+\par{a)} $\alpha \vdash \neg ( \neg \alpha \wedge \neg \beta)$
+
+\par{b)} $\vdash \alpha \wedge \beta \rightarrow \beta \wedge \alpha$
+
+\par{c)} $\vdash \neg \alpha \rightarrow (\alpha \rightarrow \bot )$
+
+\par{d)} $\vdash ( \alpha \leftrightarrow \beta )
+            \leftrightarrow
+            (\alpha \rightarrow \beta) \wedge (\beta \rightarrow \alpha)
+         $
+
+\hfill
+
+\bye
+
+
