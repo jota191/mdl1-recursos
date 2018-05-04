@@ -13,7 +13,7 @@ TEX = tex
 2018-1:
 	$(LATEX) 2018-1-parcial.tex
 
-2018-accmod:
+2018-1-accmod:
 	$(LATEX) --jobname=2018-1-accmod \
 	"\def\accmod{1} \input{2018-1-parcial.tex}"
 

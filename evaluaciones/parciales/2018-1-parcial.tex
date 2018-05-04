@@ -3,7 +3,12 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 
+%environment para exos
+\newtheorem {Ejercicio}{Ejercicio}
+\newenvironment{ejercicio}{\begin{Ejercicio} \rm}{\rm\end{Ejercicio}}
 
+
+% para compilar bold y helvet, para mayor accesibilidad
 \ifdefined\accmod
 \usepackage{helvet}
 \renewcommand{\seriesdefault}{\bfdefault}
@@ -14,74 +19,57 @@
 
 \begin{document}
 
-\section*{Ejercicio 1}
-Demostrar que, para $n \in \mathbb{N}, n>1$ se cumple:
-\begin{equation*}
-  \sum_{i=1}^{n}{(2i-1)} = n^2
-\end{equation*}
 
-\section*{Ejercicio 2}
-Sea el conjunto $A= \{ a,b,c,d,e\}$. Consideramos la relaci\'on
-$R\subset A \times A$ definida por:
+\begin{ejercicio}
+  Sean $A = \{ n \in \mathbb{N} \:/\:  n\:\mbox{es par y}\: n<7\}$,
+  $B=\{4,6,8,10\}$. Se pide:
+  \begin{enumerate}
+  \item Escribir una definici\'on de $B$ por comprensi\'on.
+  \item Hallar $A\cup B$, $A\cap B$, $A-B$, $B-A$.
+  \item Calcular $|\mathcal{P}(B)|$.
+  \item Calcular cuantas funciones hay de $A$ en $B$.
+  \end{enumerate}
+\end{ejercicio}
 
-\begin{align*}
-  R = \{&(c,c),(c,a),(c,b),(c,e),(c,d),(a,a),(a,d),(a,e),\\
-     & (b,b),(b,d),(b,e),(e,e),(e,d),(d,d)
-  \}
-\end{align*}
+\begin{ejercicio}
+  Demostrar que, para $n\in\mathbb{N}$:
+  $$\sum_{i=1}^{n}{(2i-1)} = n^2$$
+\end{ejercicio}
 
-\begin{enumerate}
-\item
-  Construir una matriz de adyacencia para la relaci\'on $R$.
-\item
-  Decidir si $R$ cumple o no las siguientes propiedades:
-  \begin{itemize}
-  \item Reflexividad
-  \item Simetr\'ia
-  \item Antisimetr\'ia
-  \item Transitividad
-  \end{itemize}
-  En cada caso, justificar.
-\item
-  Es una relaci\'on de equivalencia? En caso afirmativo hallar
-  $A/R$.
-\item
-  Es un orden parcial? En caso afirmativo, dibujar el diagrama de Hasse
-  correspondiente.
-\end{enumerate}
+\begin{ejercicio}
+  Sea $A=\{1,2,3,4,5\}$ un conjunto y
+  $$R = \{(1,1),(1,3),(3,1),(3,3),(2,4),(4,2),(2,2),(4,4),(5,5)\}$$
+  una relaci\'on sobre $A$.
+  \begin{enumerate}
+  \item Hallar una matriz de adyacencia para la relaci\'on $R$.
+  \item Decidir si la relaci\'on $R$ es:
+    \begin{enumerate}
+    \item Reflexiva.
+    \item Sim\'etrica.
+    \item Antisim\'etrica.
+    \item Transitiva.
+    \end{enumerate}
+  \item
+    Es una relaci\'on de equivalencia? En caso afirmativo hallar
+    $A/R$.
+  \item
+    Es un orden parcial? En caso afirmativo,
+    dibujar el diagrama de Hasse correspondiente.
+  \end{enumerate}
+\end{ejercicio}
 
-\newpage
-\section*{Ejercicio 3}
-Consideramos los conjuntos:
-\begin{align*}
-  A &= \{ n \in \mathbb{N} / n < 10\} \\
-  B &= \{ 2,3,5 \}
-\end{align*}
-Calcular:
-\begin{enumerate}
-\item $A \cap B$
-\item $A \cup B$
-\item $A-B$
-\item $A \times B$
-\item $|\mathcal{P}(B)|$
-\end{enumerate}
 
-\section*{Ejercicio 4}
 
-Considere $f: \mathbb{N}\times\mathbb{N}\rightarrow\mathbb{N}$ definida
-como $f(x,y)= 2(x+y)$.
-\begin{enumerate}
-\item Es $f$ inyectiva?
-\item Es $f$ sobreyectiva?
-\item Es $f$ biyectiva?
-  En cada caso, justifique.
+\begin{ejercicio}.\\
+  Sean $f:\mathbb{N}\rightarrow\mathbb{N}$ y
+  $g:\mathbb{N}^2\rightarrow\mathbb{N}$.
+  Donde $f(n)=2n$, y $f(m,n)=m+n$.
+  \begin{enumerate}
+  \item
+    Calcular $f \circ g$.
+  \item
+    Puede calcular $g \circ f$? Justifique.
+  \end{enumerate}
 
-\item Sea $g :\mathbb{N}\rightarrow\mathbb{N}\times\mathbb{N}$ tal que
-  $f(x) = (x,x)$. Calcule $g \circ f$ y $f \circ g$.
-\end{enumerate}
-
-\section*{Ejercicio 5 (Te\'orico)}
-Sea $f : A\times A\rightarrow A$ una operaci\'on sobre $A$.
-Definir elemento neutro para $A$.
-
+\end{ejercicio}
 \end{document}
