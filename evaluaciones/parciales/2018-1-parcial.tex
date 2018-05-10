@@ -1,7 +1,25 @@
 %Author: Juan Garc\'ia Garland
+\ifdefined\accmod
+\documentclass[14pt]{extarticle}
+\usepackage{geometry}
+%\usepackage[a4paper,margin=1in,landscape]{geometry}
+
+\else
 \documentclass[12pt,a4paper]{article}
+\fi
 \usepackage{amsmath}
 \usepackage{amsfonts}
+
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Primer Parcial}
+\lhead{Matem\'atica Discreta y L\'ogica I}
+\rfoot{P\'agina \thepage \: de \pageref{LastPage}}
+
 
 %environment para exos
 \newtheorem {Ejercicio}{Ejercicio}
@@ -19,24 +37,34 @@
 
 \begin{document}
 
+\noindent
+Tiempo: 2 horas.\\
+No se permite consultar material ni calculadora.\\
+Justifique todas sus respuestas.
 
-\begin{ejercicio}
+\begin{ejercicio} \hfill \break
   Sean $A = \{ n \in \mathbb{N} \:/\:  n\:\mbox{es par y}\: n<7\}$,
   $B=\{4,6,8,10\}$. Se pide:
   \begin{enumerate}
   \item Escribir una definici\'on de $B$ por comprensi\'on.
   \item Hallar $A\cup B$, $A\cap B$, $A-B$, $B-A$.
   \item Calcular $|\mathcal{P}(B)|$.
-  \item Calcular cuantas funciones hay de $A$ en $B$.
+  \item Calcular cu\'antas funciones hay con
+    dominio $A$ y codominio $B$.
   \end{enumerate}
 \end{ejercicio}
 
-\begin{ejercicio}
+\begin{ejercicio}\hfill \break
   Demostrar que, para $n\in\mathbb{N}$:
   $$\sum_{i=1}^{n}{(2i-1)} = n^2$$
 \end{ejercicio}
 
-\begin{ejercicio}
+
+\ifdefined\accmod
+\newpage
+\fi
+
+\begin{ejercicio}\hfill \break
   Sea $A=\{1,2,3,4,5\}$ un conjunto y
   $$R = \{(1,1),(1,3),(3,1),(3,3),(2,4),(4,2),(2,2),(4,4),(5,5)\}$$
   una relaci\'on sobre $A$.
@@ -60,10 +88,16 @@
 
 
 
-\begin{ejercicio}.\\
-  Sean $f:\mathbb{N}\rightarrow\mathbb{N}$ y
+\begin{ejercicio}\hfill \break
+
+  Sean $f:\mathbb{N}\rightarrow\mathbb{N}$
+  y
   $g:\mathbb{N}^2\rightarrow\mathbb{N}$.
-  Donde $f(n)=2n$, y $f(m,n)=m+n$.
+  
+  Donde $f(n)=2n$, y $g(m,n)=m+n$.
+
+
+
   \begin{enumerate}
   \item
     Calcular $f \circ g$.
